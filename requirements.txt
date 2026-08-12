@@ -1,0 +1,12 @@
+# dataset generation
+openai>=1.40
+pypdf>=4.0
+# evaluation
+deepeval>=4.0
+# model merge / export
+transformers>=4.57
+peft>=0.14
+safetensors>=0.4
+torch>=2.4
+mlx-lm>=0.20          # Apple Silicon: HF<->MLX conversion
+# note: LiteRT .task conversion (litert-torch + mediapipe) runs on Colab/Linux, not macOS-ARM

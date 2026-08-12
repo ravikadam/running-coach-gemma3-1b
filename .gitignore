@@ -1,0 +1,28 @@
+# secrets
+.env
+*.key
+hf_token*
+
+# derived dataset (excluded from public repo — synthesized from a copyrighted book)
+data/
+raw/
+
+# model weights / artifacts / logs
+outputs/
+runs/
+exports/
+*.safetensors
+*.gguf
+*.tflite
+*.task
+merged_hf/
+mlx_model/
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# deepeval local
+.deepeval/
+.deepeval_telemetry.txt
