@@ -97,7 +97,7 @@ Full step-by-step: [`PIPELINE.md`](PIPELINE.md).
 - **Coaching content:** the model was adapted using material paraphrased from a third-party
   running guide. This project is **educational, transformative, and not affiliated with or endorsed
   by** the guide's authors or publisher. The source text and the derived dataset are **not
-  redistributed** here. If you are a rights-holder with a concern, please open an issue.
+  redistributed** here.
 - **Code:** MIT (see [`LICENSE`](LICENSE)).
 
 **Not medical advice.** See the disclaimer at the top.
