@@ -53,15 +53,24 @@ Full report: [`RESULTS.md`](RESULTS.md).
 
 ---
 
-## Get it on your phone (Google AI Edge Gallery)
+## Get it on your phone — official Google AI Edge Gallery
 
-1. Install the **Google AI Edge Gallery** app on Android.
-2. Build the `.task` file with `scripts/convert_to_task.ipynb` (runs on Google Colab; the LiteRT
-   converter does not build on Apple Silicon), **or** download a prebuilt `.task` from the model repo.
-3. Copy `running-coach-gemma3-1b.task` to the phone and use Gallery → **Import local model**.
-4. Chat with your coach — fully offline.
+Install **Google AI Edge Gallery** (Play Store / App Store), then load the model one of two ways:
 
-Prefer llama.cpp-based apps? Use the **GGUF** build (Ollama, LM Studio, etc.).
+**A. Import from a Hugging Face URL (in-app):** in Gallery, import a model by URL and paste
+`https://huggingface.co/ravikadam/running-coach-gemma3-1b-LiteRT`.
+
+**B. Import a local model (works for any `.task`):**
+1. Download [`running-coach-gemma3-1b.task`](https://huggingface.co/ravikadam/running-coach-gemma3-1b-LiteRT) to the phone's **Download** folder.
+2. In Gallery, tap the **"+"** (bottom-right) → select the `.task` → set default params (CPU/GPU) → **Import**.
+3. Open it and chat — fully offline.
+
+Prefer llama.cpp-based apps? Use the **GGUF** build (Ollama, LM Studio, etc.):
+`ravikadam/running-coach-gemma3-1b-GGUF`.
+
+> Building the `.task` yourself: `scripts/convert_to_task.ipynb` (Colab) works but **OOMs on free
+> Colab at quantization** — use a machine with ≥24 GB RAM (a cheap cloud GPU/CPU box). The converter
+> does not build on Apple Silicon.
 
 ---
 
